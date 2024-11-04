@@ -1,0 +1,56 @@
+.c_container {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+    justify-content: space-between; /* Adds spacing between flex items */
+}
+
+.contact_img img {
+    padding: 20px;
+    height: 50vh; /* Reduce height for smaller screens */
+    max-width: 100%; /* Ensure the image doesn't overflow its container */
+}
+
+.c_partition1 {
+    padding: 20px;
+    width: 100%; /* Full width on smaller screens */
+    box-sizing: border-box; /* Include padding in the width */
+}
+
+.c_partition1 h1, p {
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+label {
+    font-size: 2rem;
+}
+
+.information {
+    margin-bottom: 20px;
+}
+
+/* Media Query for larger screens */
+@media (min-width: 768px) {
+    .c_partition1 {
+        width: 50%; /* 50% width on medium to large screens */
+    }
+
+    .contact_img img {
+        height: 80vh; /* Original height for larger screens */
+    }
+}
+
+/* Media Query for small screens */
+@media (max-width: 480px) {
+    label {
+        font-size: 1.5rem; /* Reduce font size for smaller screens */
+    }
+
+    .contact_img img {
+        padding: 10px; /* Reduce padding on smaller screens */
+    }
+
+    .information {
+        margin-bottom: 15px; /* Adjust margin for smaller screens */
+    }
+}

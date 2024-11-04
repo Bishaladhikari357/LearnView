@@ -1,0 +1,63 @@
+/* Network.css */
+
+.network_details {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.network_details h1 {
+  font-size: 2em;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.network_details p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.network_video {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.nvideo {
+  flex: 1 1 300px;
+  max-width: 560px;
+  margin: 10px;
+  text-align: center;
+}
+
+.nvideo iframe {
+  width: 100%;
+  height: 315px;
+}
+
+.nvideo h2 {
+  font-size: 1.5em;
+  margin-top: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .nvideo iframe {
+    height: 250px;
+  }
+
+  .nvideo h2 {
+    font-size: 1.2em;
+  }
+}
+
+@media (max-width: 480px) {
+  .nvideo iframe {
+    height: 200px;
+  }
+
+  .nvideo h2 {
+    font-size: 1em;
+  }
+}

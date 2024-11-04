@@ -1,0 +1,63 @@
+/* Market.css */
+
+.market_details {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.market_details h1 {
+  font-size: 2em;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.market_details p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.market_video {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.mvideo {
+  flex: 1 1 300px;
+  max-width: 560px;
+  margin: 10px;
+  text-align: center;
+}
+
+.mvideo iframe {
+  width: 100%;
+  height: 315px;
+}
+
+.mvideo h2 {
+  font-size: 1.5em;
+  margin-top: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .mvideo iframe {
+    height: 250px;
+  }
+
+  .mvideo h2 {
+    font-size: 1.2em;
+  }
+}
+
+@media (max-width: 480px) {
+  .mvideo iframe {
+    height: 200px;
+  }
+
+  .mvideo h2 {
+    font-size: 1em;
+  }
+}

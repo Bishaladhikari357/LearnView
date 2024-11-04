@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100vh;
+    padding-top: 2rem;
+}
+
+.logo{
+    width: 200px;
+    height: 200px;
+}
+
+/* Default Styles */
+.sub-container1 {
+    /* background-color: blue; */
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin-bottom: 20px;
+    height: 630px;
+}
+
+.partition1 {
+    width: 100%;
+    border-radius: 1rem;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.partition1 p {
+    padding-top: 1.5rem;
+    width: 100%;
+    /* color: white; */
+    font-size: 1rem;
+    font-style: italic;
+    margin-bottom: 3rem;
+    
+}
+
+.partition1 h1 {
+    padding-top: 3rem;
+    font-size: 2.5rem;
+    /* color: whitesmoke; */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.partition2 {
+    padding: 20px;
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 1rem;
+}
+
+.partition2 img {
+    
+    border-radius: 50%/30%;
+    width: 100%;
+    height: auto;
+}
+
+button {
+    padding: 10px;
+    font-size: 1.5rem;
+    border-radius: 1rem;
+    color: black;
+    border: none;
+    cursor: pointer;
+    background-color: skyblue;
+}
+
+
+.readh {
+    cursor: pointer;
+    padding-left: 1rem;
+}
+
+.sub-container2 {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+    margin-bottom: 40px;
+    padding: 20px;
+}
+
+.image-explain {
+    color: black;
+}
+
+.image-explain h2 {
+    padding-top: 10px;
+    font-size: 2rem;
+}
+
+.image2 {
+    width: 100%;
+    font-size: 1.5rem;
+}
+
+.image2 img {
+    border-radius: 1rem;
+    width: 100%;
+    height: auto; 
+}
+
+.image-explain {
+    width: 100%;
+    padding-left: 0;
+}
+
+.sub-container3 {
+    border: 1px solid black;
+    height: auto;
+    /* background-color: darkcyan; */
+    padding: 20px;
+}
+
+.sub-container3 h1 {
+    text-align: center;
+    padding: 0;
+    font-size: 2rem;
+    /* color: white; */
+    margin-bottom: 20px;
+}
+
+.students {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.student1,
+.student2 {
+    display: flex;
+    width: 100%;
+}
+
+.student1 img,
+.student2 img {
+    margin-top: 1rem;
+    border-radius: 1rem;
+    width: 100px;
+    height: 200px;
+object-fit: fill;    
+
+}
+
+.student1 p,
+.student2 p {
+    /* color: white; */
+    padding: 10px;
+}
+
+/* Media Queries for larger screens */
+@media (min-width: 768px) {
+    .sub-container1 {
+        height: auto;
+    }
+
+    .partition1 {
+        width: 45%;
+    }
+
+    .partition1 p {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .partition2 {
+        width: 55%;
+    }
+
+    .sub-container2 {
+        flex-direction: row;
+    }
+
+    .image2 {
+        width: 50%;
+    }
+
+    .image-explain {
+        width: 50%;
+        padding-left: 20px;
+    }
+
+    .students {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .student1,
+    .student2 {
+        width: 48%;
+    }
+
+    .student1 img,
+    .student2 img {
+        width: 200px;
+    }
+}
+
+/* Media Queries for even larger screens */
+@media (min-width: 1024px) {
+    .partition1 h1 {
+        font-size: 4rem;
+    }
+
+    button {
+        font-size: 2rem;
+    }
+}

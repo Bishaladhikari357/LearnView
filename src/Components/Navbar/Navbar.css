@@ -1,0 +1,86 @@
+/* Navbar Styles */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.navbar {
+  height: 82px;
+  position: fixed;  /* Makes the navbar fixed at the top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  background-color: whitesmoke;
+  /* background-color: #333; */
+  z-index: 1000;  /* Ensure it stays above other content */
+}
+.logo{
+  width: 147px;
+  height: 250px;
+}
+
+.logo img {
+  padding-top: 4rem;
+  height: 126px;
+}
+
+.menu-links ul {
+  display: flex;
+  gap: 2rem;
+}
+
+.menu-links ul li {
+  list-style: none;
+}
+
+.menu-links ul li a {
+  color:black;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.burger {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .menu-links {
+    position: absolute;
+    top: 60px;  /* Ensure the menu appears just below the navbar */
+    right: 0;
+    /* background-color: #333; */
+    background-color: whitesmoke;
+    width: 153px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .menu-links.active {
+    transform: translateX(0);
+  }
+
+  .menu-links ul {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .burger {
+    display: block;  /* Show burger icon on smaller screens */
+  }
+
+  .navbar {
+    padding: 1rem;  /* Adjust padding for smaller screens */
+  }
+}

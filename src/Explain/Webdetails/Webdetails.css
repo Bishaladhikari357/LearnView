@@ -1,0 +1,46 @@
+/* Webdetails.css */
+
+.details {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.webdevelopment {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Wrap the items if needed */
+}
+
+.Frontend, .Backend {
+  flex: 1 1 45%; /* Take 45% of the container width */
+  margin: 10px;
+}
+
+.custom-video {
+  margin-top: 30px;
+}
+
+.custom-video h2{
+  padding-left: 10px;
+}
+form{
+  padding-left: 10px;
+}
+
+iframe {
+  width: 100%; /* Make iframe responsive */
+  height:264px; /* Maintain aspect ratio */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .webdevelopment {
+    flex-direction: column; /* Stack videos vertically */
+  }
+
+  .Frontend, .Backend {
+    flex: 1 1 100%; /* Take full width on smaller screens */
+    margin-bottom: 20px;
+  }
+}
